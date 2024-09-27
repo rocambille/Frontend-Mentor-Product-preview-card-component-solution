@@ -41,11 +41,14 @@
         font-family: Montserrat;
         font-size: 14px;
         line-height: 1.6;
+      }
 
-        @media (min-width: 900px) {
-          font-size: 21px;
-          line-height: 1.6;
-        }
+      body {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
       }
 
       .card {
@@ -129,8 +132,7 @@
           }
         }
 
-        @media (min-width: 900px) {
-          max-width: 900px;
+        @media (min-width: 686px) {
           grid-template-columns: repeat(2, 1fr);
 
           img {
@@ -162,8 +164,8 @@
           ./images/image-product-desktop.jpg 600w,
           ./images/image-product-mobile.jpg  686w
         "
-        sizes="(max-width: 900px) 686px,
-         600px"
+        sizes="(max-width: 685px) 686px,
+        600px"
         src="./images/image-product-desktop.jpg"
         alt=""
       />
